@@ -26,8 +26,6 @@ This project implements and evaluates multiple text classification approaches:
 
 **Datasets:** 20 Newsgroups, TweetEval  
 **Metrics:** F1-score (macro/weighted), Accuracy, Inference Time, Training Time, Cost-Accuracy Tradeoff
-
-
 **Robustness**: Multi-seed evaluation (seeds: 42, 123, 7) with mean ± std reporting
 
 # 🗂️ Repository Structure
@@ -63,6 +61,7 @@ DSS5104-Assignment-2/
 ├── requirements.txt      # Pinned dependencies for reproducibility
 ├── README.md             # This file
 └── LICENSE               # MIT License
+```
 
 To load results programmatically:
 ```python
@@ -71,7 +70,7 @@ with open('results/all_results_distil_seed7.pkl', 'rb') as f:
     results = pickle.load(f)
 
 ## 📊 Results Summary
-
+----
 ### 20 Newsgroups (Multi-class Classification)
 | Model | Tier | Accuracy (±std) | Macro F1 (±std) | Train Time |
 |-------|------|-----------------|-----------------|------------|
