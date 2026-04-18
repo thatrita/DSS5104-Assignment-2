@@ -1,13 +1,13 @@
 # DSS5104 Assignment 2: Text Classification & Model Comparison
 
-> **Course:** DSS5104 — Machine Learning and Predictive Modelling
+> **Course:** DSS5104 — Machine Learning and Predictive Modelling  
 > **Assignment:** 2 — Text Classification  
 > **Focus:** Reproducible comparison of classical ML, neural, and transformer models
 
-> **TEAM MEMBERS**: 
-Cheng Yi Zhen (A0333501W)
-Chua Wei Lin (A0170134U)
-Rita Indah Lestari (A0115171U)
+> **TEAM MEMBERS**:  
+Cheng Yi Zhen (A0333501W)  
+Chua Wei Lin (A0170134U)  
+Rita Indah Lestari (A0115171U)  
 Repo**: [thatrita/DSS5104-Assignment-2](https://github.com/thatrita/DSS5104-Assignment-2)
 
 ---
