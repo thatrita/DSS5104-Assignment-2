@@ -1,6 +1,6 @@
 # DSS5104 Assignment 2: Text Classification & Model Comparison
 
-> **Course:** DSS5104 — Advanced Data Science  
+> **Course:** DSS5104 — Machine Learning and Predictive Modelling
 > **Assignment:** 2 — Text Classification  
 > **Focus:** Reproducible comparison of classical ML, neural, and transformer models
 
