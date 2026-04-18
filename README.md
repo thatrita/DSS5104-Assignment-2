@@ -27,7 +27,7 @@ This project implements a tiered text classification benchmark comparing:
 ```text
 DSS5104-Assignment-2/
 ├── notebooks/
-│   ├── 01_Main Analysis and Tier 1.ipynb      # Classical models + BiLSTM
+│   ├── 01_Main Analysis and Tier 1&2.ipynb      # Classical models + BiLSTM
 │   ├── 02_Tier 2 Roberta _ Tier 3 Distilbert Seed 7.ipynb
 │   ├── 03_Tier 3 Distilbert_Seed 42 and 103 .ipynb
 │   └── 04_Data Efficiency_setfit.ipynb        # Few-shot SetFit analysis
