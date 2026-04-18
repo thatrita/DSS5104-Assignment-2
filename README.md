@@ -68,9 +68,11 @@ To load results programmatically:
 import pickle
 with open('results/all_results_distil_seed7.pkl', 'rb') as f:
     results = pickle.load(f)
+```
 
+---
 ## 📊 Results Summary
-----
+
 ### 20 Newsgroups (Multi-class Classification)
 | Model | Tier | Accuracy (±std) | Macro F1 (±std) | Train Time |
 |-------|------|-----------------|-----------------|------------|
