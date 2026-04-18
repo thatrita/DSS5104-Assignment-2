@@ -94,6 +94,7 @@ with open('results/all_results_distil_seed7.pkl', 'rb') as f:
 🔍 **Key Insight**: Classical models achieve strong performance on 20NG with minimal compute. BiLSTM shows moderate gains but requires ~188s training. DistilBERT balances accuracy and efficiency, while RoBERTa excels on the semantically subtle irony task (F1=0.701). The `talk.religion.misc` and `ironic` classes remain challenging across all architectures.
 ```
 
+```
 ## 🚀 How to Reproduce
 
 ### 1️⃣ Environment Setup
