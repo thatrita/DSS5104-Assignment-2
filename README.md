@@ -27,14 +27,31 @@ This project implements a tiered text classification benchmark comparing:
 ```text
 DSS5104-Assignment-2/
 ├── notebooks/
-│   ├── 01_Main Analysis and Tier 1&2.ipynb      # Classical models + BiLSTM
+│   ├── 01_Main Analysis and Tier 1 & 2.ipynb           
 │   ├── 02_Tier 2 Roberta _ Tier 3 Distilbert Seed 7.ipynb
 │   ├── 03_Tier 3 Distilbert_Seed 42 and 103 .ipynb
-│   └── 04_Data Efficiency_setfit.ipynb        # Few-shot SetFit analysis
+│   └── 04_Data Efficiency_setfit.ipynb     
 ├── results/
-│   ├── figures/          # Saved plots 
-│   ├── models/           # Serialized checkpoints (.pt)
-│   └── metrics/          # CSV summaries of evaluation results
+│   ├── all_results_distil_seed7.pkl                    # DistilBERT results (seed 7)
+│   ├── all_results_distil_seed42.pkl                   # DistilBERT results (seed 42)
+│   ├── all_results_distil_seed123.pkl                  # DistilBERT results (seed 123)
+│   ├── all_results_roberta.pkl                         # RoBERTa model results
+│   ├── BiLSTM (Tier 2 Neural Model) and Classical Models (TF-IDR + LR / SVM) result.pkl
+│   ├── figures/
+│   │   ├── results/
+│   │   │   ├── cost_accuracy_tradeoff.png              # Cost vs accuracy analysis
+│   │   │   ├── inference_time.png                      # Inference time comparison
+│   │   │   ├── model_comparison_f1.png.png             # F1 score model comparison
+│   │   │   ├── per_class_f1_heatmap_20ng.png           # Per-class F1 heatmap (20ng)
+│   │   │   └── training_time_comparison_fixed.png      # Training time comparison
+│   │   │   └── tweeteval_crossover_analysis.png        # TweetEval crossover analysis
+│   │   │   └── tweeteval_crossover_plot.png            # TweetEval crossover plot
+│   ├── tmp_final_distilbert-base-uncased_7/            # Final model checkpoint (seed 7)
+│   ├── tmp_final_distilbert-base-uncased_42/           # Final model checkpoint (seed 42)
+│   ├── tmp_final_distilbert-base-uncased_123/          # Final model checkpoint (seed 123)
+│   ├── tmp_tune_distilbert-base-uncased_7/             # Tuning artifacts (seed 7)
+│   ├── tmp_tune_distilbert-base-uncased_42/            # Tuning artifacts (seed 42)
+│   └── tmp_tune_distilbert-base-uncased_123/           # Tuning artifacts (seed 123)   
 ├── data/                 # NOT TRACKED – download via Kaggle API
 ├── requirements.txt      # Pinned dependencies for reproducibility
 ├── README.md             # This file
