@@ -12,7 +12,7 @@ This project implements a tiered text classification benchmark comparing:
 - **Tier 1**: Classical ML (TF-IDF + Logistic Regression / SVM)
 - **Tier 2**: Neural architecture (BiLSTM with custom training loop)
 - **Tier 3**: Transformer fine-tuning (RoBERTa-base, DistilBERT-base)
-- **Tier 4**: Data efficiency analysis using SetFit for few-shot learning
+
 
 **Datasets**:
 | Dataset | Task | Classes | Train/Val/Test |
