@@ -128,8 +128,8 @@ Raw data is **not tracked in Git**. Download via:
 # Option A: Kaggle API (for TweetEval/20ng if hosted)
 kaggle datasets download -d <dataset-name> -p data/raw/
 ```
-# Option B: HuggingFace Datasets (recommended for transformers)
 ```bash
+# Option B: HuggingFace Datasets (recommended for transformers)
 # Handled automatically in notebooks via \`datasets.load_dataset()\`
 ```
 Ensure data is placed in:
