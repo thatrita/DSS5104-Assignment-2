@@ -76,20 +76,20 @@ with open('results/all_results_distil_seed7.pkl', 'rb') as f:
 ### 20 Newsgroups (Multi-class Classification)
 | Model | Tier | Accuracy (±std) | Macro F1 (±std) | Train Time |
 |-------|------|-----------------|-----------------|------------|
-| TF-IDF + LR | 1 | 0.902 ± 0.000 | 0.889 ± 0.000 | 1.0s |
-| TF-IDF + SVM | 1 | 0.905 ± 0.000 | 0.893 ± 0.000 | 1.3s |
-| BiLSTM | 2 | **0.820 ± 0.023** | **0.816 ± 0.023** | 188.4s |
-| DistilBERT | 3 | **0.877 ± 0.012** | **0.863 ± 0.010** | 2432.7s |
-| RoBERTa-base | 3 | **0.851 ± 0.004** | **0.830** | 980.4s ± 139.7s |
+| TF-IDF + LR | 1 | 0.902 ± 0.000 | 0.889 ± 0.000 | 0.98 ± 0.02s |
+| TF-IDF + SVM | 1 | 0.905 ± 0.000 | 0.893 ± 0.000 | 1.27 ± 0.00s |
+| BiLSTM | 2 | 0.820 ± 0.023 | 0.816 ± 0.023 | 179.92 ± 4.03s |
+| DistilBERT | 3 | 0.877 ± 0.012 | 0.863 ± 0.010 | 2432.67 ± 1678.68s |
+| RoBERTa-base | 3 | 0.851 ± 0.004 | 0.830 ± 0.009 | 980.4s ± 139.74s |
 
 ### TweetEval-Irony (Binary Classification)
 | Model | Tier | Accuracy (±std) | Macro F1 (±std) | Train Time |
 |-------|------|-----------------|-----------------|------------|
-| TF-IDF + LR | 1 | 0.653 ± 0.000 | 0.643 ± 0.000 | 0.05s |
-| TF-IDF + SVM | 1 | 0.652 ± 0.000 | 0.642 ± 0.000 | 0.06s |
-| BiLSTM | 2 | **0.608 ± 0.009** | **0.584 ± 0.022** | 51.1s |
-| DistilBERT | 3 | **0.682 ± 0.015** | **0.674 ± 0.017** | 1509.8s |
-| RoBERTa-base | 3 | **0.704 ± 0.013** | **0.689 ± 0.018** | 723.9s ± 21.1s |
+| TF-IDF + LR | 1 | 0.653 ± 0.000 | 0.643 ± 0.000 | 0.05 ± 0.000s |
+| TF-IDF + SVM | 1 | 0.652 ± 0.000 | 0.642 ± 0.000 | 0.06 ± 0.000s |
+| BiLSTM | 2 | 0.608 ± 0.009 | 0.584 ± 0.022 | 54.91 ± 2.03s |
+| DistilBERT | 3 | 0.682 ± 0.015 | 0.674 ± 0.017 | 1509.76 ± 970.70s |
+| RoBERTa-base | 3 | 0.704 ± 0.013 | 0.689 ± 0.018 | 723.9s ± 21.1s |
 
 🔍 **Key Insight**: Classical models achieve strong performance on 20NG with minimal compute. BiLSTM shows moderate gains but requires ~188s training. DistilBERT balances accuracy and efficiency, while RoBERTa excels on the semantically subtle irony task (F1=0.701). The `talk.religion.misc` and `ironic` classes remain challenging across all architectures.
 ```
