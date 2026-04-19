@@ -41,7 +41,7 @@ DSS5104-Assignment-2/
 │   ├── all_results_distil_seed42.pkl                   # DistilBERT results (seed 42)
 │   ├── all_results_distil_seed123.pkl                  # DistilBERT results (seed 123)
 │   ├── all_results_roberta.pkl                         # RoBERTa model results
-│   ├── BiLSTM (Tier 2 Neural Model) and Classical Models (TF-IDR + LR / SVM) result.pkl
+│   ├── dss5104asg2_wl12042026_outputs.pkl              # TF-IDF + LR _ SVM and BiLSTM results
 │   ├── figures/
 │   │   ├── results/
 │   │   │   ├── cost_accuracy_tradeoff.png              # Cost vs accuracy analysis
@@ -80,7 +80,7 @@ with open('results/all_results_distil_seed7.pkl', 'rb') as f:
 | TF-IDF + SVM | 1 | 0.905 ± 0.000 | 0.893 ± 0.000 | 1.3s |
 | BiLSTM | 2 | **0.820 ± 0.023** | **0.816 ± 0.023** | 188.4s |
 | DistilBERT | 3 | **0.877 ± 0.012** | **0.863 ± 0.010** | 2432.7s |
-| RoBERTa-base | 3 | **0.851 ± 0.004** | **0.820** | 980.4s ± 139.7s |
+| RoBERTa-base | 3 | **0.851 ± 0.004** | **0.830** | 980.4s ± 139.7s |
 
 ### TweetEval-Irony (Binary Classification)
 | Model | Tier | Accuracy (±std) | Macro F1 (±std) | Train Time |
@@ -89,7 +89,7 @@ with open('results/all_results_distil_seed7.pkl', 'rb') as f:
 | TF-IDF + SVM | 1 | 0.652 ± 0.000 | 0.642 ± 0.000 | 0.06s |
 | BiLSTM | 2 | **0.608 ± 0.009** | **0.584 ± 0.022** | 51.1s |
 | DistilBERT | 3 | **0.682 ± 0.015** | **0.674 ± 0.017** | 1509.8s |
-| RoBERTa-base | 3 | **0.704 ± 0.013** | **0.701** | 723.9s ± 21.1s |
+| RoBERTa-base | 3 | **0.704 ± 0.013** | **0.689 ± 0.018** | 723.9s ± 21.1s |
 
 🔍 **Key Insight**: Classical models achieve strong performance on 20NG with minimal compute. BiLSTM shows moderate gains but requires ~188s training. DistilBERT balances accuracy and efficiency, while RoBERTa excels on the semantically subtle irony task (F1=0.701). The `talk.religion.misc` and `ironic` classes remain challenging across all architectures.
 ```
